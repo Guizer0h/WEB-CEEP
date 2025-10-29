@@ -2,13 +2,19 @@ body {
     background-color: #e2e3e4;
     margin: 0;
     font-family: sans-serif;
+    
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    margin-left: 5%;
+    margin-left: 3%;
     
 
     .card {
@@ -25,12 +31,12 @@ body {
 }
 
 .btn-card {
-    background-color: #0566c0;
+    background-color: #176dcf;
     color: white;
     border: none;
     padding: 15px 30px;
     margin-top: 10px;
-    border-radius: 6px;
+    border-radius: 10px;
     cursor: pointer;
     transition: transform .2s;
     margin-top: 10%;
@@ -130,6 +136,158 @@ img{
 }
 
 h1 {
-    margin-left: 8%;
-    margin-top: 8%;
+    margin-left: 6%;
+    margin-top: 6%;
+    color: #176dcf;
+}
+
+#icone {
+    color: #176dcf;
+}
+
+footer {
+    background-color: #646464;
+    margin-top: 4%
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #0e2a4d;
+  color: white;
+  padding: 60px 100px;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.footer-left h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.footer-left p {
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #cfd8e3;
+}
+
+.footer-right {
+  flex: 1;
+  min-width: 300px;
+  margin-left: 400px;
+}
+
+.footer-right p {
+  margin-bottom: 15px;
+  color: #cfd8e3;
+}
+
+.footer-right a {
+  color: #37a2ff;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons i {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #7a8ba1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons i:hover {
+  color: white;
+}
+
+.intro {
+  background-color: #176dcf;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  padding: 0 5%;
+  gap: 50px;
+  position: relative;
+  overflow: visible; /* permite que a imagem saia pra fora */
+  margin-bottom: 20%;
+  
+}
+
+.intro-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.intro-img img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  position: relative;
+  top: 160px; /* faz a imagem descer e invadir o cinza */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* texto */
+.intro-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* botão */
+.intro .btn-card {
+  background-color: white;
+  color: #176dcf;
+  font-weight: 600;
+}
+
+.intro .btn-card:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.05);
+}
+
+/* responsivo */
+@media (max-width: 900px) {
+  .intro {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .intro-img img {
+    max-width: 80%;
+    top: 0;
+  }
 }
