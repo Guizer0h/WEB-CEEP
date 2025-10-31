@@ -87,19 +87,16 @@ main {
     flex-wrap: wrap;
     justify-content: left;
     margin-left: 3%;
+}
 
-
-    .card {
-        background-color: rgb(255, 255, 255);
-        width: 20rem;
-        height: 17rem;
-        padding: 2rem;
-        margin: 2rem;
-        border-radius: 5%;
-        transition: transform .3s;
-
-
-    }
+.card {
+    background-color: rgb(255, 255, 255);
+    width: 20rem;
+    height: 17rem;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 5%;
+    transition: transform .3s;
 }
 
 .btn-card {
@@ -108,12 +105,12 @@ main {
     border: none;
     padding: 15px 30px;
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 40px;
     cursor: pointer;
     transition: transform .2s;
     margin-top: 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 100%
+    font-size: 20px
 }
 
 .btn-card:hover {
@@ -131,30 +128,10 @@ main {
     font-size: 2.5rem;
 }
 
-
-/* Estilos da navbar */
-.navbar {
-    display: flex;
-    /* Habilita o Flexbox */
-    justify-content: space-between;
-    /* Alinha itens nas extremidades */
-    align-items: center;
-    /* Alinha itens verticalmente */
-    background-color: #FFFF;
-    color: black;
-    padding: 0.5rem 2rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
 .logo-titulo {
     display: flex;
     align-items: center;
 }
-
-.titulo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 
 img {
     width: 100px;
@@ -214,10 +191,168 @@ h1 {
     margin-left: 6%;
     margin-top: 6%;
     color: #176dcf;
+
 }
 
 #icone {
     color: #176dcf;
+}
+
+.intro {
+    background-color: #176dcf;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    padding: 0 10%;
+    gap: 50px;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 35%;
+
+}
+
+.intro-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.intro-img img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    position: relative;
+    top: 245px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.intro-content {
+    flex: 1;
+    max-width: 700px;
+    position: relative;
+    top: 300px;
+
+}
+
+.intro p {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 13vh;
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    color: #596672;
+}
+
+.intro .btn-card {
+    background-color: #176dcf;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 40px;
+}
+
+.intro .btn-card:hover {
+    background-color: #00498E;
+    transform: scale(1.05);
+}
+
+/* responsivo */
+@media (max-width: 900px) {
+    .intro {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .intro-img img {
+        max-width: 80%;
+        top: 0;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.intro2 {
+    background-color: #e2e3e4;
+    color: #176dcf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    padding: 0 10%;
+    gap: 50px;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 15%;
+}
+
+.intro2-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.intro2-img img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+   
+
+.intro2-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.intro2 p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: #596672;
+}
+
+.intro2 .btn-card {
+    background-color: #176dcf;
+    color: white;
+    font-weight: 700;
+    padding: 18px 30px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.intro2 .btn-card:hover {
+    background-color: #0e4fa8;
+    transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .intro2 {
+        flex-direction: column-reverse;
+        height: auto;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .intro2-img img {
+        max-width: 80%;
+    }
 }
 
 footer {
@@ -288,85 +423,3 @@ footer {
 .social-icons i:hover {
     color: white;
 }
-
-.intro {
-    background-color: #176dcf;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40vh;
-    padding: 0 10%;
-    gap: 50px;
-    position: relative;
-    overflow: visible;
-    /* permite que a imagem saia pra fora */
-    margin-bottom: 20%;
-
-}
-
-.intro-img {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    position: relative;
-
-}
-
-.intro-img img {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    border-radius: 5px;
-    object-fit: cover;
-    position: relative;
-    top: 170px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-
-/* texto */
-.intro-content {
-    flex: 1;
-    max-width: 700px;
-}
-
-.intro p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    text-transform: uppercase;
-    height: 5vh;
-    margin-bottom: 3rem;
-    font-size: 2rem;
-    line-height: 1.4;
-}
-
-/* botão */
-.intro .btn-card {
-    background-color: white;
-    color: #176dcf;
-    font-weight: 600;
-}
-
-.intro .btn-card:hover {
-    background-color: #f2f2f2;
-    transform: scale(1.05);
-}
-
-/* responsivo */
-@media (max-width: 900px) {
-    .intro {
-        flex-direction: column;
-        height: auto;
-        text-align: center;
-        padding: 60px 20px;
-    }
-
-    .intro-img img {
-        max-width: 80%;
-        top: 0;
-    }
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-
