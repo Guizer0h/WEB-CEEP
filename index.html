@@ -67,7 +67,7 @@
                 <i class="fas fa-briefcase curso-icon" id="icone"></i>
                 <h2>Técnico em Administração</h2>
                 <p><i class="far fa-calendar-alt"></i> Duração: 3 anos</p>
-                <p>Transforme ideias em resultados: Aprenda a planejar, organizar e executar</p>
+                <p>Desenvolva habilidades para planejar, organizar e liderar equipes.</p>
                 <button class="btn-card">Mais informações</button>
             </div>
 
@@ -75,7 +75,7 @@
                 <i class="fas fa-laptop-code curso-icon" id="icone"></i>
                 <h2>Técnico em Sistemas</h2>
                 <p><i class="far fa-calendar-alt"></i> Duração: 3 anos</p>
-                <p>Aprenda a criar o futuro da tecnologia enquanto cursa o Ensino Médio.</p>
+                <p>Aprenda programação e crie soluções tecnológicas inovadoras no Ensino Médio.</p>
                 <button class="btn-card">Mais informações</button>
             </div>
 
@@ -83,15 +83,15 @@
                 <i class="fas fa-building-user curso-icon" id="icone"></i>
                 <h2>Técnico em Hospedagem</h2>
                 <p><i class="far fa-calendar-alt"></i> Duração: 3 anos</p>
-                <p>Transforme ideias em resultados: Aprenda a planejar, organizar e executar</p>
+                <p>Aprenda sobre atendimento, gestão e operação em serviços de hospedagem.</p>
                 <button class="btn-card">Mais informações</button>
             </div>
 
             <div class="card">
-                <i class="fas fa-seedling curso-icon" id="icone"></i>
+                <i class="fas fa-hamburger curso-icon" id="icone"></i>
                 <h2>Tecnico em Alimentos</h2>
                 <p><i class="far fa-calendar-alt"></i> Duração: 3 anos</p>
-                <p>Aprenda a criar o futuro da tecnologia enquanto cursa o Ensino Médio.</p>
+                <p>Aprenda técnicas de produção e controle de qualidade na área alimentícia.</p>
                 <button class="btn-card">Mais informações</button>
             </div>
 
@@ -99,7 +99,7 @@
                 <i class="fas fa-cogs curso-icon" id="icone"></i>
                 <h2>Técnico em Mecatronica</h2>
                 <p><i class="far fa-calendar-alt"></i> Duração: 3 anos</p>
-                <p>Transforme ideias em resultados: Aprenda a planejar, organizar e executar</p>
+                <p>Integre mecânica e eletrônica para criar sistemas automatizados.</p>
                 <button class="btn-card">Mais informações</button>
             </div>
         </div>
@@ -110,12 +110,58 @@
                 <i class="fas fa-user-nurse curso-icon" id="icone"></i>
                 <h2>Técnico em Enfermagem</h2>
                 <p><i class="far fa-calendar-alt"></i> Duração: 3 anos</p>
-                <p>Com paixão e técnica, cuide de vidas e faça a diferença na saúde.</p>
+                <p>Aprenda a cuidar, prestar assistência e atuar na área da saúde.</p>
+                <button class="btn-card">Mais informações</button>
+            </div>
+        </div>
+
+         <h1>Cursos Técnicos do Ensino Médio (Noturno)</h1>
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-hamburger curso-icon" id="icone"></i>
+                <h2>Técnico em Alimentos</h2>
+                <p><i class="far fa-calendar-alt"></i> Duração: 3 anos</p>
+                <p>Aprenda técnicas de produção e controle de qualidade na área alimentícia.</p>
                 <button class="btn-card">Mais informações</button>
             </div>
 
+             <div class="card">
+                <i class="fas fa-user-nurse curso-icon" id="icone"></i>
+                <h2>Técnico em Enfermagem</h2>
+                <p><i class="far fa-calendar-alt"></i> Duração: 3 anos</p>
+                <p>Aprenda a cuidar, prestar assistência e atuar na área da saúde.</p>
+                <button class="btn-card">Mais informações</button>
+            </div>
+            
+             <div class="card">
+                <i class="fas fa-lightbulb curso-icon" id="icone"></i>
+                <h2>Técnico em Eletrotécnica</h2>
+                <p><i class="far fa-calendar-alt"></i> Duração: 3 anos</p>
+                <p>Domine os princípios da eletricidade e desenvolva projetos elétricos.</p>
+                <button class="btn-card">Mais informações</button>
+            </div>
+            
+             <div class="card">
+                <i class="fas fa-utensils curso-icon" id="icone"></i>
+                <h2>Técnico em Gastronomia</h2>
+                <p><i class="far fa-calendar-alt"></i> Duração: 3 anos</p>
+                <p>Aprenda técnicas culinárias e desenvolva sua criatividade na cozinha.</p>
+                <button class="btn-card">Mais informações</button>
+            </div>
+            
+              <div class="card">
+                <i class="fas fa-cogs curso-icon" id="icone"></i>
+                <h2>Técnico em Mecatronica</h2>
+                <p><i class="far fa-calendar-alt"></i> Duração: 3 anos</p>
+                <p>Integre mecânica e eletrônica para criar sistemas automatizados.</p>
+                <button class="btn-card">Mais informações</button>
+            </div>
         </div>
     </main>
+
+    <section class="logo-transicao">
+        <img src="img.logo2.jpeg" alt="Logo CEEP" class="logo-animada">
+    </section>
 
     <footer class="footer">
         <div class="footer-left">
@@ -157,6 +203,17 @@
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
         };
+
+        const logo = document.querySelector('.logo-animada');
+
+        window.addEventListener('scroll', () => {
+            const posicaoLogo = logo.getBoundingClientRect().top;
+            const alturaTela = window.innerHeight;
+
+            if (posicaoLogo < alturaTela - 100) {
+                logo.classList.add('visivel');
+            }
+        });
     </script>
 
 </body>
