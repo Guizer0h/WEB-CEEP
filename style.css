@@ -26,6 +26,7 @@ main {
     z-index: 1000;
 }
 
+
 #main-header img {
     width: 100px;
     border-radius: 50%;
@@ -41,8 +42,8 @@ main {
 #main-header .nav-menu ul {
     list-style: none;
     display: flex;
-    gap: 30px;
-    margin: 0;
+    gap: 20px;
+     margin: 0 7rem 0 0;
     padding: 0;
 }
 
@@ -209,7 +210,7 @@ h1 {
     gap: 50px;
     position: relative;
     overflow: visible;
-    margin-bottom: 35%;
+    margin-bottom: 30%;
 
 }
 
@@ -282,17 +283,17 @@ h1 {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 .intro2 {
-    background-color: #e2e3e4;
+    background-color: #bdbdbd;
     color: #176dcf;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40vh;
+    height: 65vh;
     padding: 0 10%;
     gap: 50px;
     position: relative;
     overflow: visible;
-    margin-bottom: 15%;
+    margin-bottom: 12%;
 }
 
 .intro2-img {
@@ -370,6 +371,13 @@ footer {
     color: white;
     padding: 60px 100px;
     flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.footer-left img {
+    border-radius: 50%;
+    width: 10%;
+    justify-content: center;
 }
 
 .footer-left {
@@ -422,4 +430,36 @@ footer {
 
 .social-icons i:hover {
     color: white;
+}
+
+.logo-transicao {
+  position: relative;
+  background: linear-gradient(to bottom, #e2e3e4 50%, #0e2a4d 50%);
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  overflow: visible;
+}
+
+.logo-transicao img {
+  position: absolute;
+  width: 150px; /* ajuste o tamanho conforme quiser */
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  padding: 10px;
+  z-index: 2;
+}
+
+.logo-animada {
+  opacity: 0;
+  transform: translateX(-100px); /* começa da esquerda */
+  transition: all 1.5s ease-out;
+}
+
+.logo-animada.visivel {
+  opacity: 1;
+  transform: translateX(0);
 }
