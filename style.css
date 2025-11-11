@@ -81,6 +81,14 @@ main {
     margin-top: 100px;
 }
 
+#cursos {
+    scroll-margin-top: 200px; 
+  }
+
+  #fetec {
+    scroll-margin-top: 80px;
+  }
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -208,7 +216,7 @@ h1 {
     gap: 50px;
     position: relative;
     overflow: visible;
-    margin-bottom: 30%;
+    margin-bottom: 40%;
 
 }
 
@@ -243,8 +251,8 @@ h1 {
     font-family: 'Playfair Display', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    height: 13vh;
-    margin-bottom: 3rem;
+    height: 4vh;
+    margin-bottom: 11rem;
     font-size: 2.4rem;
     line-height: 1.5;
     color: #596672;
@@ -263,7 +271,6 @@ h1 {
     transform: scale(1.05);
 }
 
-/* responsivo */
 @media (max-width: 900px) {
     .intro {
         flex-direction: column;
@@ -281,7 +288,6 @@ h1 {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 .intro2 {
-    background-color: #bdbdbd;
     color: #176dcf;
     display: flex;
     align-items: center;
@@ -536,3 +542,16 @@ footer {
   box-shadow: 0 4px 20px rgba(0,0,0,0.25);
 }
 
+.btn-carrossel {
+    background-color: #176dcf;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: transform .2s;
+    margin-top: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px
+}
