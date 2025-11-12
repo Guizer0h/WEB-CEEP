@@ -347,7 +347,6 @@ h1 {
     transform: scale(1.05);
 }
 
-/* Responsivo */
 @media (max-width: 900px) {
     .intro2 {
         flex-direction: column-reverse;
